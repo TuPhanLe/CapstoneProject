@@ -1,0 +1,1 @@
+INCLUDE_DIRS "D:/esp/Espressif/frameworks/.gitTesting/main/Inc" )  ## My path

@@ -1,0 +1,133 @@
+.switchBM {
+    display: block;
+    position: relative;
+    bottom: -10px;
+    left: -25px;
+    width: 90px;
+    height: 30px;
+    top: 25px;
+    border-radius: 25px;
+}
+
+.switchBM input {
+    appearance: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 25px;
+    outline: 4px solid gray;
+}
+
+.switchBM input::before,
+.switchBM input::after{
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    font-weight: bolder;
+}
+
+.switchBM input::before{
+    content: "OFF";
+    font-size: 15px;
+    left: 13px;
+    top: 15px;
+
+}
+
+
+.switchBM input::after {
+    content: "ON";
+    font-size: 15px;
+    right: 8px;
+    top: 15px;
+}
+
+
+.switchBM label {
+    z-index: 1;
+    position: absolute;
+    top: 7px;
+    bottom: 9px;
+    border-radius: 20px;
+}
+
+.switchBM input{
+    transition: 0.25s;
+}
+
+.switchBM input:checked::after,
+.switchBM input:checked::before{
+    color: #fff;
+    /* transition: color 0.5s; */
+}
+
+
+
+.switchBM input:not(:checked){
+    /* background: yellowgreen; */
+    transition: background 0.4s;
+}
+
+.switchBM input:not(:checked)::before{
+    color: #ffff;
+    transition: color 0.5s;
+}
+
+.switchBM input:not(:checked)::after{
+    color: white;
+    transition: color 0.5s 0.2s;
+}
+
+.switchBM input:not(:checked)+label{
+    left: -5px;
+    right: 45px;
+    top: -1px;
+    bottom: -9px;
+    background: gray;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+.switchBM input:checked+label{
+    left: 45px;
+    right: -3px;
+    top: -1px;
+    bottom: -9px;
+    background: gray;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+
+}
+.light-bulb #bulb{
+    width: 29px;
+    height: 43px;
+}
+
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-col {
+    flex: 1;
+}
+
+.char-body {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.icon-padding {
+    padding-right: 6px;
+
+}
+
+.input-checkbox {
+    width: 30px;
+    height: 20px;
+}
+
+.input-dayinweek {
+    padding-left: 5px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+}

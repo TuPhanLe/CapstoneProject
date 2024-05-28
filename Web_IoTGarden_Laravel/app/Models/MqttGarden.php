@@ -31,5 +31,13 @@ class MqttGarden extends Model
         }
             return $dataFromDB;
     }
-
+    public function showDataFromDBTest($flag){
+        if($flag === 1) {
+            $dataFromDB = DB::select('SELECT * FROM `mqtt_gardens` WHERE `node` = ? order BY  `time` ASC LIMIT 20', ['1']);
+        }
+        if($flag === 2) {
+            $dataFromDB = DB::select('SELECT * FROM `mqtt_gardens` WHERE `node` = ? order BY  `time` ASC LIMIT 20', ['2']);
+        }
+            return $dataFromDB;
+    }
 }

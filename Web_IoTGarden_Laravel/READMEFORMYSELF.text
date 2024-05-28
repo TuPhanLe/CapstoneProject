@@ -2,3 +2,4 @@
 1. Run php artisan serve => chạy serve
 2. Run php artisan websocket:serve => chạy websocket
 3. npm run dev => thực thi các file js 
+4. php artisan schedule:list => run BG mqtt to receive packet 

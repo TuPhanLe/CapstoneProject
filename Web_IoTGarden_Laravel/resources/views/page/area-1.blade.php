@@ -145,6 +145,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   @vite('resources/js/app.js')
   <script>
+
   let chartTemp;
   let chartHumi;
   let chartSoil;
@@ -155,6 +156,7 @@
   let light
   let time;
   let test;
+  
     const CTemp = document.getElementById('js-Chart-Temp');
     chartTemp = new Chart(CTemp, {
     type: 'line',
@@ -402,6 +404,6 @@
       // chart.data.datasets[0].data.shift();
       chartLight.update();
     }
-  
+
   </script>
 @endsection
